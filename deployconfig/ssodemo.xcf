@@ -1,0 +1,10 @@
+<APPLICATION Parent="defaultgwc"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="http://www.4js.com/ns/gas/3.10/cfextwa.xsd"
+>
+	<EXECUTION>
+		<PATH>$(res.path.fgldir.demo)</PATH>
+    <MODULE>demo</MODULE>
+		<DELEGATE service="SimpleSSOServiceProvider"/>
+	</EXECUTION>
+</APPLICATION>

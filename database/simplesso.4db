@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Schema gstVersion="30a05" id="{1e24ed8f-15aa-418f-82c5-687284879604}" version="4.0">
+  <AGSettings version="1.1">
+    <DynamicProperties version="2">
+      <DynamicProperty description="Associated label when generating form" initialValue="" isDefaultInherited="false" isHidden="false" label="Label" name="label" readOnly="false" type="TEXT"/>
+      <DynamicProperty description="Associated widget" editorInfo="contains:ButtonEdit|CheckBox|ComboBox|DateEdit|DateTimeEdit|Edit|FFImage|FFLabel|Field|Phantom|ProgressBar|RadioGroup|Slider|SpinEdit|TextEdit|TimeEdit" initialValue="Edit" isDefaultInherited="false" isHidden="false" label="Widget" name="widget" readOnly="false" type="ENUM"/>
+      <DynamicPropertyGroup collapsed="false" description="Formfied properties" label="Formfield" name="formfieldGroup" properties="label;widget"/>
+    </DynamicProperties>
+    <NodeInfos version="1">
+      <NodeInfo mimeType="db/column" properties="widget;label"/>
+    </NodeInfos>
+  </AGSettings>
+  <ExtractionSettings last="SQLite">
+    <ExtractionOptions casens="LowerCase" cvmeth="AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA" ignerr="true" systab="false" type="SQLite"/>
+  </ExtractionSettings>
+  <Table active="true" name="relaystate" status="U" uuid="db/table1">
+    <Column fglLength="255" fglType="201" name="uuid" notNull="true" order="1" status="U" uuid="db/column1"/>
+    <Column fglLength="255" fglType="201" name="login" notNull="true" order="2" status="U" uuid="db/column3"/>
+    <Column fglLength="255" fglType="201" name="sessionid" notNull="true" order="3" status="U" uuid="db/column5"/>
+    <Column fglLength="4" fglType="2" name="valid" notNull="true" order="4" status="U" uuid="db/column6"/>
+    <Column fglLength="3594" fglType="10" name="expiredate" notNull="true" order="5" status="U" uuid="db/column7"/>
+  </Table>
+  <Table active="true" name="sessions" status="U" uuid="db/table4">
+    <Column fglLength="255" fglType="201" name="login" notNull="true" order="1" status="U" uuid="db/column14"/>
+    <Column fglLength="255" fglType="201" name="opaqueid" notNull="true" order="2" status="U" uuid="db/column10"/>
+    <Column fglLength="3594" fglType="10" name="expiredate" notNull="true" order="3" status="U" uuid="db/column12"/>
+  </Table>
+  <Table active="true" name="users" status="U" uuid="db/table2">
+    <Column fglLength="255" fglType="201" name="login" notNull="true" order="1" status="U" uuid="db/column2"/>
+    <Column fglLength="255" fglType="201" name="password" notNull="true" order="2" status="U" uuid="db/column4"/>
+  </Table>
+  <Views ActiveView="View-1" showLabels="true">
+    <View Name="View-1">
+      <Layout>
+        <![CDATA[AAAAAgAAABIAZABiAC8AdABhAGIAbABlADJAZ2AAAAAAAEBnAAAAAAAAP70vGp++ds8BAAAAEgBkAGIALwB0AGEAYgBsAGUANEB+4AAAAAAAQGggAAAAAAA/vbItDlYEHwE=]]>
+      </Layout>
+    </View>
+  </Views>
+</Schema>

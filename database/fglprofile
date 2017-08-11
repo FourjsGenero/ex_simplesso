@@ -1,0 +1,2 @@
+dbi.database.simplesso.source = "simplesso.db"
+dbi.database.simplesso.driver = "dbmsqt_3"

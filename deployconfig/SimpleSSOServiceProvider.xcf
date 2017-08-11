@@ -1,0 +1,12 @@
+<APPLICATION Parent="ws.default"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="http://www.4js.com/ns/gas/3.10/cfextws.xsd"
+>
+  <EXECUTION>
+    <ENVIRONMENT_VARIABLE Id="FGLPROFILE">fglprofile</ENVIRONMENT_VARIABLE>
+    <ENVIRONMENT_VARIABLE Id="FGLWSDEBUG">3</ENVIRONMENT_VARIABLE>
+    <ENVIRONMENT_VARIABLE Id="FGLSQLDEBUG">9</ENVIRONMENT_VARIABLE>
+    <PATH>$(res.deployment.path)/bin</PATH>
+    <MODULE>SimpleSSOServiceProvider</MODULE>
+  </EXECUTION>
+</APPLICATION>

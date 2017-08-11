@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<MANIFEST xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.4js.com/ns/gas/3.10/mf.xsd">
+  <DESCRIPTION>Demo SimpleSSOProvider (service and application)</DESCRIPTION>
+  <APPLICATION xcf="ssodemo.xcf" />
+  <APPLICATION xcf="ssorelogdemo.xcf" />
+  <SERVICE xcf="SimpleSSOServiceProvider.xcf" />
+</MANIFEST>
