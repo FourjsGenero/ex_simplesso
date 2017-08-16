@@ -164,11 +164,13 @@ END FUNCTION
 #+ @param req current HTTPServiceRequest instance
 #+
 #+ @param login_url URL to submit the POST formular
+#+ @param username Name of user to be re-logged
 #+
 PUBLIC
-FUNCTION SendRelogPage(req, login_url)
+FUNCTION SendRelogPage(req, login_url, username)
   DEFINE  req         com.HttpServiceRequest
   DEFINE  login_url   STRING
+  DEFINE  username    STRING
   DEFINE  htmlContent STRING
   DEFINE  htmlDom     xml.DomDocument
   DEFINE  node        xml.DomNode
@@ -183,6 +185,13 @@ FUNCTION SendRelogPage(req, login_url)
   LET list = htmlDom.selectByXPath("//FORM[@NAME='relog']",NULL)
   LET node = list.getItem(1)
   CALL node.setAttribute("action",login_url)
+
+  # Set username value
+  IF username IS NOT NULL THEN
+    LET list = htmlDom.selectByXPath("//input[@name='userName']",NULL)
+    LET node = list.getItem(1)
+    CALL node.setAttribute("value",username)
+  END IF
   
   #Save it to String
   LET htmlContent=htmlDom.saveToString()

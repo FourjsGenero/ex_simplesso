@@ -561,7 +561,7 @@ FUNCTION DoPrompt(req, baseURL, query)
   LET uuid = SSOUserFunctions.createRelayState(prompt_id, session_id, CURRENT + RELOGIN_TIME)
   
   # Start reauthentication page and send reponse to /Validate?relaystate operation 
-  CALL HTTPHelper.SendRelogPage(req, baseURL||C_BASE_PATH||HTTPHelper.C_VALIDATE||"?relaystate="||uuid)
+  CALL HTTPHelper.SendRelogPage(req, baseURL||C_BASE_PATH||HTTPHelper.C_VALIDATE||"?relaystate="||uuid, prompt_id)
   
 END FUNCTION
 
