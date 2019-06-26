@@ -49,12 +49,10 @@ Web service configuration file _deployconfig/SimpleSSOServiceProvider.xcf_
 - start Genero Application Server
 - deploy the applications (see deployment node **SimpleSSODemo**)
 
-You can deploy the applications by uploading the gar file through the **Genero Deployment portal** from the GAS monitor page.
+You can deploy the applications by uploading the gar file through the **Genero Identy Platform** from the GAS home page.
 ```
-http://localhost:6394/monitor
+http://localhost:6394/demos.html
 ```
-If you do so do not forget to enable the demo.
-
 ## How to test
 Once GAS started and the applications deployed.
 
