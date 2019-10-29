@@ -257,7 +257,7 @@ PRIVATE FUNCTION DelegateAuthenticate(req, baseURL, query, originURL)
             # Forward user as environment variable to FGLRUN in charge of that user
             # Put here all other environment variable related to user
             CALL req.setResponseHeader(
-                C_X_FOURJS_ENVIRONEMENT_ || "user", p_user)
+                C_X_FOURJS_ENVIRONMENT_ || "user", p_user)
 
             # Forward prompt id in case of re-login in order to keep user
             CALL req.setResponseHeader(
