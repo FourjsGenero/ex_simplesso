@@ -7,10 +7,10 @@ Once connected, the end user does not need to enter any credentials for 24 hours
 As a demo, the session management is simple and manage sessions via a SQLite database.
 
 ## Prerequisities
-- Genero Studio 3.10
-- Genero Business Language 3.10
-- Genero Application Server 3.10
-- Genero Browser Client 1.00
+- Genero Studio 3.21
+- Genero Business Language 3.21
+- Genero Application Server 3.21
+- Genero Browser Client 6.00
 
 ## Project
 It contains:
